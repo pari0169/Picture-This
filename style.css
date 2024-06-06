@@ -38,3 +38,24 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 960px) {
+  .square {
+      display: block;
+  }
+  .landscape {
+      display: none;
+  }
+}
+@media (max-width: 959px) {
+  .square {
+      display: none;
+  }
+  .landscape {
+      display: block;
+  }
+}
